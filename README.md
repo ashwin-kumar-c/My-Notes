@@ -14,10 +14,15 @@ Demo goes here
 
 ### Features
 * Authentication
-    * User must register and login in order to use the application
+    * User must be authenticated in order to use the application and must be authorized to access his account
     * JWT is used for user authentication
  
-* Note
+* User Module
+    *  User must register and login to perform crud operations on notes
+    *  Form validations are done without using third party packages
+
+* Note Module
     * User can create note by entering the note details in note form.
     * Edit button is provied for the user to modify the notes
     * With Delete button, user can remove the note from the list
+    * Form validations are done without using third party packages
