@@ -4,10 +4,10 @@ My notes is a simple note taking app in which user can store importent notes rel
 
 🛠 **Tech Stack**
 
-- JavaScript ES6
-- ReactJS | ReduxJS
-- Git
-- [Bootstrap](https://getbootstrap.com/), [react-router-dom](https://v5.reactrouter.com/web/guides/quick-start), [redux](https://redux.js.org/), [react-redux](https://react-redux.js.org/), [redux-thunk](https://www.npmjs.com/package/redux-thunk), [axios](https://www.npmjs.com/package/axios), [sweetalert](https://www.npmjs.com/package/sweetalert), [validator](https://www.npmjs.com/package/validator)
+- 💻 JavaScript ES6
+- 🌐 ReactJS | ReduxJS
+- 🔧 Git
+- ➕ [Bootstrap](https://getbootstrap.com/), [react-router-dom](https://v5.reactrouter.com/web/guides/quick-start), [redux](https://redux.js.org/), [react-redux](https://react-redux.js.org/), [redux-thunk](https://www.npmjs.com/package/redux-thunk), [axios](https://www.npmjs.com/package/axios), [sweetalert](https://www.npmjs.com/package/sweetalert), [validator](https://www.npmjs.com/package/validator)
 
 ### Demo
 ![1](https://user-images.githubusercontent.com/91862529/142794556-00d3a75a-5ba1-4046-b876-fc8583a8a01b.JPG)
@@ -36,3 +36,9 @@ My notes is a simple note taking app in which user can store importent notes rel
     * Edit button is provied for the user to modify the notes
     * With Delete button, user can remove the note from the list
     * Form validations are done without using third party packages
+
+### Contibutor
+
+![Photo-cropped](https://user-images.githubusercontent.com/91862529/142796666-f35e680c-1c33-4a1c-afe4-48b1f1d2e681.jpg)
+
+   Ashwin Kumar C
