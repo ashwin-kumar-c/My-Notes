@@ -1,6 +1,6 @@
 # MY NOTES  
 
-My notes is a simple note taking app in which user can store importent notes related to his work or his studies.
+My notes is a simple note taking app in which user can store importent notes related to work or studies.
 
 🛠 **Tech Stack**
 
