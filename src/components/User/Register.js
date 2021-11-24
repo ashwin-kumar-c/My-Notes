@@ -7,7 +7,7 @@ import Button from '../../resuables/Button'
 import { startRegisterUser } from '../../actions/userAction'
 
 const Register = (props) => {
-    const [user, setUser] = useState({ 
+    const [ user, setUser ] = useState({ 
         username: '',
         email: '',
         password: '',
@@ -51,8 +51,7 @@ const Register = (props) => {
             setUser({...user, formErrors: {}})
             const { username, email, password } = user
 
-           /* es6 - concise properties - when the property name and the variable name is the same, 
-            we can only use the variable name */
+           /* es6 - concise property */
             const formData = {
                 username,
                 email,
@@ -157,7 +156,8 @@ const Register = (props) => {
                     handleClick={handleClick}
                 />   
             </form>  
-            <div>{serverErrors.register && <div className="text-danger">{serverErrors.register}</div>}</div>       
+            
+            { serverErrors.register && <div className="text-danger">{serverErrors.register}</div> }    
         </div>
     )
 }

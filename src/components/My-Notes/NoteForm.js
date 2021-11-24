@@ -4,7 +4,7 @@ import Textarea from '../../resuables/Textarea'
 
 const NoteForm = (props) => {
     const { formSubmit, title: noteTitle, body: noteBody } = props
-    const [note, setNote] = useState({
+    const [ note, setNote ] = useState({
         title: noteTitle ? noteTitle : '',
         body: noteBody ? noteBody : '',
         formErrors: {}
@@ -31,7 +31,6 @@ const NoteForm = (props) => {
                 title,
                 body
             }
-
             const resetForm = () => {
                 setNote({
                     title: '',
@@ -39,7 +38,7 @@ const NoteForm = (props) => {
                     formErrors: {} 
                 })
             }
-
+            
             formSubmit(formData, resetForm)        
         } else {
             setNote({...note, formErrors : {...errors}})
@@ -83,7 +82,6 @@ const NoteForm = (props) => {
                     </div>
                 </div>
                 
-
                 <Input
                     type="submit"
                     className="btn btn-success my-3"

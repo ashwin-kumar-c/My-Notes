@@ -46,7 +46,7 @@ const notesReducer = (state = notesInitialState, action) => {
         case 'SINGLE_NOTE_ERROR': {
             return {...state, errors: {...state.errors, singleNote: action.payload}}
         }
-        default : {
+        default: {
             return {...state}
         }
     }

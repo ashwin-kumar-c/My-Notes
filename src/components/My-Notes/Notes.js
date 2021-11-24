@@ -22,17 +22,17 @@ const Notes = (props) => {
             <Heading 
                 className="my-5"
                 type="h3" 
-                title={`Notes - ${notes.data.length}`}
+                title={ `Notes - ${ notes.data.length }` }
             />
             <div className="row"> 
                 <div className="col-sm-6">
                     <NotesList/>
                 </div>
                 <div className="col-sm-6">
-                <AddNote/>
+                    <AddNote/>
                 </div>
             </div> 
-            {notes.errors.allNotes && <div className="text-danger">{notes.errors.allNotes}</div>}
+            { notes.errors.allNotes && <div className="text-danger">{ notes.errors.allNotes }</div> }
         </div>
     )
 } 

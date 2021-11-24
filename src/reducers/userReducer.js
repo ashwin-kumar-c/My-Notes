@@ -14,7 +14,10 @@ const userReducer = (state = userInitialState, action) => {
         case 'LOGIN_ERROR': {
             return {...state, errors: {...state.errors, login: action.payload}}
         }
-        default : {
+        case 'ACCOUNT_ERROR': {
+            return {...state, errors: {...state.errors, account: action.payload}}
+        }
+        default: {
             return {...state}
         } 
     }

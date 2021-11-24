@@ -27,7 +27,7 @@ const NavBar = (props) => {
     })
 
     const handleLogout = () => {
-        localStorage.clear()
+        localStorage.removeItem('token')
         swal({
             title:'Successfully logged out',
             button: 'Cancel'
@@ -57,27 +57,27 @@ const NavBar = (props) => {
                     <div className="collapse navbar-collapse" id="navbarMenu">                   
                         <ul className="navbar-nav ms-auto">
                             <li className="nav-item">
-                                <Link className="nav-link" to="/">Home</Link>
+                                <Link className="nav-link" to="/"> Home </Link>
                             </li>
                             { Object.keys(user).length > 0 ? (
                                 <>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/account">Account</Link>
+                                        <Link className="nav-link" to="/account"> Account </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/notes">Notes</Link>
+                                        <Link className="nav-link" to="/notes"> Notes </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="#" onClick={handleLogout}>Logout</Link>
+                                        <Link className="nav-link" to="#" onClick={ handleLogout }> Logout </Link>
                                     </li>         
                                 </>    
                             ) : (
                                 <>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/register">Register</Link>
+                                        <Link className="nav-link" to="/register"> Register </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/login">Login</Link>
+                                        <Link className="nav-link" to="/login"> Login </Link>
                                     </li>
                                 </> 
                             ) }
@@ -89,9 +89,9 @@ const NavBar = (props) => {
         
             <Route path="/" component={Home} exact />
             <Route path="/register" component={Register} />
-            <Route path="/login" component={Login}/>
-            <Route path="/account" component={Account}/>
-            <Route path="/notes" component={Notes}/>
+            <Route path="/login" component={Login} />
+            <Route path="/account" component={Account} />
+            <Route path="/notes" component={Notes} />
         </div>
         
     )

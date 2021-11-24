@@ -50,8 +50,8 @@ export const startLoginUser = (loginData, redirect, resetForm) => {
                     button: 'Cancel'
                 })
                 localStorage.setItem('token', result.token)
-                dispatch(startGetUser(result.token))   // after login, get user account details
-                dispatch(startGetNotes(result.token))  // after login, get notes of that perticular user (token) 
+                dispatch(startGetUser(result.token))   // immediately after login, get user account details
+                dispatch(startGetNotes(result.token))  // immediately after login, get notes of that perticular user (token) 
                 resetForm()
                 redirect()
             }
@@ -81,10 +81,8 @@ export const startGetUser = (token) => {
             dispatch(setUser(result))
         })
         .catch((err) => {
-            swal({
-                title:err.message,
-                button: 'Cancel'
-            })
+            console.log(err.message);
+            dispatch(accountError(err.message))
         }) 
     }
 }
@@ -93,5 +91,12 @@ export const setUser = (user) => {
     return {
         type: 'SET_USER',
         payload: user
+    }
+}
+
+export const accountError = (message) => {
+    return {
+        type: 'ACCOUNT_ERROR',
+        payload: message
     }
 }

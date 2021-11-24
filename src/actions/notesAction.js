@@ -80,7 +80,7 @@ export const startDeleteNote = (_id) => {
         const confirmRemove = window.confirm('Are you sure')
         if(confirmRemove) {
             axios.delete(`http://dct-user-auth.herokuapp.com/api/notes/${_id}`, {
-            headers : {
+            headers: {
                 "x-auth": localStorage.getItem('token')
             }
         })

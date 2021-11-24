@@ -23,7 +23,7 @@ const AddNote = (props) => {
                 title="Add Note"
             />
             <NoteForm formSubmit={formSubmit}/>
-            {serverErrors.addNote && <div className="text-danger">{serverErrors.addNote}</div>}
+            { serverErrors.addNote && <div className="text-danger">{serverErrors.addNote}</div> }
         </div>
     )
 }

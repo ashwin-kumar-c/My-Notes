@@ -7,7 +7,7 @@ import Button from '../../resuables/Button'
 import { startLoginUser } from '../../actions/userAction'
 
 const Login = (props) => {
-    const [user, setUser] = useState({
+    const [ user, setUser ] = useState({
         email : '',
         password : '',
         formErrors : {}
@@ -87,18 +87,18 @@ const Login = (props) => {
                 title="Login to your account"    
             />
 
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={ handleSubmit }>
                 <div className="mb-3 row">
                     <div className="col-sm-4">
                         <Input
                             type="text"
                             className="form-control"
-                            value={user.email}
-                            handleChange={handleChange}
+                            value={ user.email }
+                            handleChange={ handleChange }
                             name="email"
                             placeholder="email"
                         />
-                        {user.formErrors.email && <div className="form-text">{user.formErrors.email}</div>}
+                        { user.formErrors.email && <div className="form-text">{ user.formErrors.email }</div> }
                     </div>        
                 </div>
 
@@ -107,12 +107,12 @@ const Login = (props) => {
                         <Input
                         type="text"
                         className="form-control"
-                        value={user.password}
-                        handleChange={handleChange}
+                        value={ user.password }
+                        handleChange={ handleChange }
                         name="password"
                         placeholder="password"
                     />
-                    {user.formErrors.password && <div className="form-text">{user.formErrors.password}</div>}
+                    { user.formErrors.password && <div className="form-text">{ user.formErrors.password }</div> }
                     </div>
                 </div>
                 
@@ -129,7 +129,8 @@ const Login = (props) => {
                     handleClick={handleClick}
                 />                  
             </form>
-            <div>{serverErrors.login && <div className="text-danger">{serverErrors.login}</div>}</div>  
+
+            { serverErrors.login && <div className="text-danger">{ serverErrors.login }</div> } 
         </div>
     )
 }
