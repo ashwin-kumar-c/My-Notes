@@ -83,8 +83,7 @@ const NavBar = (props) => {
                             ) }
                         </ul>
                     </div>   
-                </div>
-                
+                </div> 
             </nav>
         
             <Route path="/" component={Home} exact />
@@ -93,10 +92,7 @@ const NavBar = (props) => {
             <Route path="/account" component={Account} />
             <Route path="/notes" component={Notes} />
         </div>
-        
     )
 }    
-
-
 
 export default withRouter(NavBar)
